@@ -1,26 +1,38 @@
 import React, { Component } from 'react';
-
+import PropTypes from 'prop-types';
 
 class Item extends Component {
   render() {
-    const { item } = this.props;
+    const { packed, id, value, onCheckOff, onRemove } = this.props;
     return (
       <article className="Item">
-        <label htmlFor={item.id}>
+        <label htmlFor={id}>
           <input
             type="checkbox"
-            checked={item.packed}
-            onChange={this.props.onCheckOff}
-            id={item.id}
+            checked={packed}
+            onChange={onCheckOff}
+            id={id}
           />
-          {item.value}
+          {value}
         </label>
-        <button className="Item-remove" onClick={this.props.onRemove}>
+        <button className="Item-remove" onClick={onRemove}>
           Remove
         </button>
       </article>
     );
   }
 }
+
+Item.propTypes = {
+  packed: PropTypes.bool,
+  id: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  onCheckOff: PropTypes.func.isRequired,
+  onRemove: PropTypes.func.isRequired,
+};
+
+Item.defaultProps = {
+  packed: false,
+};
 
 export default Item;

@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-
-
-class Filter extends Component {
+class Filter extends PureComponent {
   handleChange = event => {
-    const { onChange } = this.props;
     const value = event.target.value;
-    onChange(value);
+    this.props.updateFilter(value);
   };
 
   render() {
-    const { searchTerm } = this.props;
+    const { value } = this.props;
     return (
       <input
         className="Items-searchTerm"
-        value={searchTerm}
+        value={value}
         onChange={this.handleChange}
       />
     );
