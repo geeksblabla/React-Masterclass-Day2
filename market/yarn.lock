@@ -3098,7 +3098,7 @@ hmac-drbg@^1.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^2.3.1:
+hoist-non-react-statics@^2.5.0:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
 
@@ -4460,15 +4460,12 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   dependencies:
     minimist "0.0.8"
 
-mobx-react@^4.4.2:
-  version "4.4.3"
-  resolved "http://registry.npmjs.org/mobx-react/-/mobx-react-4.4.3.tgz#baa9ec41165ee35ae7b9df19bca10190f36f117e"
+mobx-react@^5.2.8:
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-5.2.8.tgz#059c7f29254d7cd36e103d79113103b40348d3bf"
   dependencies:
-    hoist-non-react-statics "^2.3.1"
-
-mobx@^3.5.1:
-  version "3.6.2"
-  resolved "http://registry.npmjs.org/mobx/-/mobx-3.6.2.tgz#fb9f5ff5090539a1ad54e75dc4c098b602693320"
+    hoist-non-react-statics "^2.5.0"
+    react-lifecycles-compat "^3.0.2"
 
 mobx@^5.1.2:
   version "5.1.2"
@@ -5512,7 +5509,7 @@ react-dev-utils@^5.0.2:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.2.0, react-dom@^16.5.2:
+react-dom@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
   dependencies:
@@ -5525,16 +5522,11 @@ react-error-overlay@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
 
-react-mobx@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/react-mobx/-/react-mobx-0.0.4.tgz#c34d8bb61f712859022f3de2f67cab50dca8ca7d"
-  dependencies:
-    mobx "^3.5.1"
-    mobx-react "^4.4.2"
-    react "^16.2.0"
-    react-dom "^16.2.0"
+react-lifecycles-compat@^3.0.2:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react@^16.2.0, react@^16.5.2:
+react@^16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.5.2.tgz#19f6b444ed139baa45609eee6dc3d318b3895d42"
   dependencies:

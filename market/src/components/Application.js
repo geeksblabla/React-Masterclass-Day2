@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import uniqueId from 'lodash/uniqueId';
+import {inject} from 'mobx-react'
 import NewItem from './NewItem';
 import Items from './Items';
 
@@ -18,6 +19,9 @@ const defaultState = [
   { value: 'Sandwich', id: uniqueId(), packed: true },
 ];
 
+
+
+@inject('itemStore')
 class Application extends Component {
   state = {
    items:defaultState
